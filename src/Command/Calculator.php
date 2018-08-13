@@ -92,7 +92,7 @@ class Calculator extends Command
         $paramsConstructorOperation = $methodOperation->getParameters();
         $valuesParamsConstructorOperation = [];
 
-        // Запрос у пользователя значений параметров фигуры
+        // Запрос у пользователя значений параметров операции
         foreach ($paramsConstructorOperation as $index => $paramConstructorOperation) {
             $valuesParamsConstructorOperation[$index] = $this->askValueParam($paramConstructorOperation);
         }

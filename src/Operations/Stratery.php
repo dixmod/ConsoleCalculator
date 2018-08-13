@@ -1,8 +1,8 @@
 <?php
 
-namespace Dixmod\Strategy;
+namespace Dixmod\Operations;
 
-class Calculator
+class Stratery
 {
     /** @var OperationInterface */
     private $stratery;
@@ -26,19 +26,19 @@ class Calculator
     {
         switch ($operation) {
             case '+' :
-                return new PlusOperation();
+                return new Plus();
             case '-' :
-                return new SubsOperation();
+                return new Subs();
             case '*' :
-                return new MultOperation();
+                return new Mult();
             case '/' :
-                return new DivOperation();
+                return new Div();
             default:
                 throw new \Exception('Unknow operation');
         }
     }
 
-    public function calc(): float
+    public function calc(float $a, float $b): float
     {
         return $this->stratery->calc($a, $b);
     }

@@ -1,14 +1,14 @@
 <?php
 
-namespace Dixmod\Strategy;
+namespace Dixmod\Operations;
 
 
-class DivOperation implements OperationInterface
+class Div implements OperationInterface
 {
     /**
-     * @param int $a
-     * @param int $b
-     * @return int
+     * @param float $a
+     * @param float $b
+     * @return float
      * @throws \Exception
      */
     public function calc(float $a, float $b): float

@@ -13,7 +13,7 @@
 	"phpunit/phpunit": "^7"
   },
   "require": {
-	"php": "7.*",
+	"php": "^7.2",
 	"dixmod/shapes": "^1.0",
 	"symfony/console": "^4.1"
   },
